@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.stock-list {
+    padding: 20px;
+    display: none;
+}
+
+h1{
+    text-align: center;
+}
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.toggle-content {
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nav-button {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: #ccc;
+    color: #333;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.active {
+    background: #007bff;
+    color: #fff;
+}
+
+/* Stock Data and Watchlist Styles */
+.stock-list {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Item Styles */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+li:hover .actions {
+    opacity: 1;
+    visibility: visible;
+}
+
+li .actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 14px;
+    margin-right: 10px;
+    padding: 0;
+}
+
+.wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+ .actions{
+    opacity: 0;
+}
+.actions button{
+    font-size: 20px;
+}
+.wrap:hover .actions{
+    opacity: 1;
+}
+.red-text {
+    color: red;
+  }
+
+.added {
+    color: red; /* Change to red when item is added */
+}
+ 
