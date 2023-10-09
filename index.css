@@ -9,10 +9,36 @@ body {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 15px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Styles */
+.navbar {
+    text-align: center;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.nav-button {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: #ccc;
+    color: #333;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.active {
+    background: #007bff;
+    color: #fff;
 }
 
 .stock-list {
@@ -38,21 +64,6 @@ ul {
 }
 
 /* Navbar Styles */
-.navbar {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.nav-button {
-    cursor: pointer;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    background: #ccc;
-    color: #333;
-    border-radius: 5px;
-    margin-right: 10px;
-}
 
 .active {
     background: #007bff;
@@ -126,4 +137,26 @@ button {
 .added {
     color: red; /* Change to red when item is added */
 }
- 
+ #watchlist-items{
+    display: none;
+ }
+ #orderList-items{
+    display: none;
+ }
+
+ @media (max-width: 480px) {
+    body {
+        font-size: 14px; 
+    }
+    .navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+}
+ @media (max-width: 768px) {
+    body {
+        font-size: 14px; 
+    }
+}

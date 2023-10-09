@@ -36,193 +36,7 @@ const stockData = [
       "stockValueChange": "-31.90 (1.37%)"
     }
   ],
-  [
-    {
-      "id": 1,
-      "name": "Reliance EQ",
-      "stockExchange": "NSE",
-      "stockPrice": "2,348.10",
-      "stockValueChange": "-25.15 (1.33%)"
-    },
-    {
-      "id": 2,
-      "name": "TCS EQ",
-      "stockExchange": "BSE",
-      "stockPrice": "3,659.55",
-      "stockValueChange": "-110.55 (2.20%)"
-    },
-    {
-      "id": 3,
-      "name": "HDFC EQ",
-      "stockExchange": "NSE",
-      "stockPrice": "1,454.95",
-      "stockValueChange": "-4.10 (0.58%)"
-    },
-    {
-      "id": 4,
-      "name": "Infy EQ",
-      "stockExchange": "BSE",
-      "stockPrice": "1,668.50",
-      "stockValueChange": "-33.55 (2.58%)"
-    },
-    {
-      "id": 5,
-      "name": "Unilever EQ",
-      "stockExchange": "NSE",
-      "stockPrice": "2,295.30",
-      "stockValueChange": "-31.90 (1.37%)"
-    }
-  ],
-  [
-    {
-      "id": 1,
-      "name": "Reliance EQ",
-      "stockExchange": "NSE",
-      "stockPrice": "2,338.10",
-      "stockValueChange": "-35.15 (1.48%)"
-    },
-    {
-      "id": 2,
-      "name": "TCS EQ",
-      "stockExchange": "BSE",
-      "stockPrice": "3,669.55",
-      "stockValueChange": "120.55 (3.20%)"
-    },
-    {
-      "id": 3,
-      "name": "HDFC EQ",
-      "stockExchange": "NSE",
-      "stockPrice": "1,494.95",
-      "stockValueChange": "13.10 (0.88%)"
-    },
-    {
-      "id": 4,
-      "name": "Infy EQ",
-      "stockExchange": "BSE",
-      "stockPrice": "1,678.50",
-      "stockValueChange": "-43.55 (2.58%)"
-    },
-    {
-      "id": 5,
-      "name": "Unilever EQ",
-      "stockExchange": "NSE",
-      "stockPrice": "2,295.30",
-      "stockValueChange": "-31.90 (1.37%)"
-    }
-  ],
-  [
-    {
-      "id": 1,
-      "name": "Reliance EQ",
-      "stockExchange": "NSE",
-      "stockPrice": "2,398.10",
-      "stockValueChange": "25.15 (1.48%)"
-    },
-    {
-      "id": 2,
-      "name": "TCS EQ",
-      "stockExchange": "BSE",
-      "stockPrice": "3,149.55",
-      "stockValueChange": "-100.55 (3.20%)"
-    },
-    {
-      "id": 3,
-      "name": "HDFC EQ",
-      "stockExchange": "NSE",
-      "stockPrice": "1,494.95",
-      "stockValueChange": "-1.10 (0.88%)"
-    },
-    {
-      "id": 4,
-      "name": "Infy EQ",
-      "stockExchange": "BSE",
-      "stockPrice": "1,668.50",
-      "stockValueChange": "-43.55 (2.58%)"
-    },
-    {
-      "id": 5,
-      "name": "Unilever EQ",
-      "stockExchange": "NSE",
-      "stockPrice": "2,495.30",
-      "stockValueChange": "-31.90 (1.37%)"
-    }
-  ],
-  [
-    {
-      "id": 1,
-      "name": "Reliance EQ",
-      "stockExchange": "NSE",
-      "stockPrice": "2,338.10",
-      "stockValueChange": "-35.15 (1.48%)"
-    },
-    {
-      "id": 2,
-      "name": "TCS EQ",
-      "stockExchange": "BSE",
-      "stockPrice": "3,649.55",
-      "stockValueChange": "-120.55 (3.20%)"
-    },
-    {
-      "id": 3,
-      "name": "HDFC EQ",
-      "stockExchange": "NSE",
-      "stockPrice": "1,474.95",
-      "stockValueChange": "-13.10 (0.88%)"
-    },
-    {
-      "id": 4,
-      "name": "Infy EQ",
-      "stockExchange": "BSE",
-      "stockPrice": "1,678.50",
-      "stockValueChange": "-43.55 (2.58%)"
-    },
-    {
-      "id": 5,
-      "name": "Unilever EQ",
-      "stockExchange": "NSE",
-      "stockPrice": "2,295.30",
-      "stockValueChange": "-31.90 (1.37%)"
-    }
-  ],
-  [
-    {
-      "id": 1,
-      "name": "Reliance EQ",
-      "stockExchange": "NSE",
-      "stockPrice": "2,338.10",
-      "stockValueChange": "-35.15 (1.48%)"
-    },
-    {
-      "id": 2,
-      "name": "TCS EQ",
-      "stockExchange": "BSE",
-      "stockPrice": "3,649.55",
-      "stockValueChange": "-120.55 (3.20%)"
-    },
-    {
-      "id": 3,
-      "name": "HDFC EQ",
-      "stockExchange": "NSE",
-      "stockPrice": "1,474.95",
-      "stockValueChange": "-13.10 (0.88%)"
-    },
-    {
-      "id": 4,
-      "name": "Infy EQ",
-      "stockExchange": "BSE",
-      "stockPrice": "1,678.50",
-      "stockValueChange": "-43.55 (2.58%)"
-    },
-    {
-      "id": 5,
-      "name": "Unilever EQ",
-      "stockExchange": "NSE",
-      "stockPrice": "2,295.30",
-      "stockValueChange": "-31.90 (1.37%)"
-    }
-  ]
-]
-
+];
 let watchlist = [];
 let orderList=[]
 function createData(stockData) {
@@ -283,6 +97,8 @@ function updateWatchlist() {
     const watchlistElement = document.getElementById("watchlist");
     let watchlistContent = "";
     for (let i = 0; i < watchlist.length; i++) {
+      const changeValue = parseFloat(watchlist[i].stockValueChange);
+      const changeColor = changeValue < 0 ? 'color: red;' : 'color:green';
         watchlistContent += `
             <div class="wrap">
                 <div class="stockName">
@@ -296,7 +112,7 @@ function updateWatchlist() {
                 </div>
                 <div class="stockPrice">
                     <p>Price: ₹ ${watchlist[i].stockPrice}</p>
-                    <p>${watchlist[i].stockValueChange}</p>
+                    <p style="${changeColor}">${watchlist[i].stockValueChange}</p>
                 </div>
             </div>
         `;
@@ -311,7 +127,7 @@ updateWatchlist()
 }
 
 
-
+let updateOrder
 function addToOrderList(stockDataIndex, stockItemIndex) {
   const item = stockData[stockDataIndex][stockItemIndex];
   const itemIndex = orderList.findIndex((orderlistItem) => orderlistItem.id === item.id);
@@ -319,12 +135,13 @@ function addToOrderList(stockDataIndex, stockItemIndex) {
       orderList.splice(itemIndex, 1);
 
       const button = document.querySelector(`#orderListBtn${stockDataIndex}-${stockItemIndex}`);
-      button.classList.remove("added");
+      updateOrder.classList.remove("added");
   } else {
       orderList.push(item);
 
       const button = document.querySelector(`#orderListBtn${stockDataIndex}-${stockItemIndex}`);
-      button.classList.add("added");
+      updateOrder=button
+      updateOrder.classList.add("added");
   }
   updateOrderList();
 }
@@ -332,8 +149,9 @@ function addToOrderList(stockDataIndex, stockItemIndex) {
 function updateOrderList() {
   let orderlistContent = "";
   for (let i = 0; i < orderList.length; i++) {
-    let changeValue= parseFloat(orderList.stockValueChange);
-    const changeColor = changeValue < 0 ? 'color: red;' : 'color:green';
+    const changeValues = parseFloat(orderList[i].stockValueChange);
+    const changeColors = changeValues < 0 ? 'color: red;' : 'color:green';
+    console.log(changeColors);
 
     orderlistContent += `
           <div class="wrap">
@@ -342,12 +160,12 @@ function updateOrderList() {
                   <p>${orderList[i].stockExchange}</p>
               </div>
               <div class="actions">
-              <button onclick="trashOrderList('${orderList[i].name}')"><i class="fa-solid fa-heart"></i></button>
-              <button onclick="trashOrderList('${orderList[i].name}')"><i class="fa-solid fa-cart-shopping"></i></button>
+              <button><i class="fa-solid fa-heart"></i></button>
+              <button style="color:red;" onclick="trashOrderList('${orderList[i].id}')"><i class="fa-solid fa-cart-shopping"></i></button>
               </div>
               <div class="stockPrice">
                   <p>Price: ₹ ${orderList[i].stockPrice}</p>
-                  <p styles="${changeColor}">${orderList[i].stockValueChange}</p>
+                  <p style="${changeColors}">${orderList[i].stockValueChange}</p>
               </div>
           </div>
       `;
@@ -355,9 +173,10 @@ function updateOrderList() {
   document.getElementById("orderlist").innerHTML= orderlistContent;
 }
 
-function trashOrderList(name){
-  orderList = orderList.filter((item) => item.name !== name);
-  updateOrderList();
+function trashOrderList(id){
+  updateOrder.classList.remove("added");
+orderList = orderList.filter((item)=>item.id != id)
+updateOrderList()
 
 }
 
